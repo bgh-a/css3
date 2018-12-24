@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .demo{
+            border:1px solid #ccc;
+            width: 300px;
+            margin:50px auto;
+            padding: 10px;
+        }
+        .demo::first-letter{
+            font-size: 24px;
+            font-weight: bold;
+            float: left;
+        }
+        .demo::first-line{
+            color:#f0f;
+        }
+
+        .demo01{
+            width: 300px;
+            border:1px solid salmon;
+            margin:10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .demo01::before{
+            content:url(./pig.jpg);
+            display: block;
+            
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="demo">
+        腾讯体育12月24日讯 在114-112击败雷霆的比赛中，森林狼的安德鲁-维金斯不但得到赛季个人新高的30分，并且在最后23秒命中一个高难度的准绝杀，维金斯赛后表示这是他“保持侵略性”的体现，而吉布森透露，他们其实早早就做下部署，就是要让维金斯多获得球权。
+    </div>      
+
+
+    <div class="demo01">
+
+        <p>what's you name?</p>
+    </div>
+</body>
+</html>
