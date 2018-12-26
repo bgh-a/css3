@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .demo{
+            width: 100px;
+            height: 90px;
+            position: relative;
+            margin:100px auto;
+            /* background-color: #ff0; */
+        }
+        .demo::after{
+            content:'';
+            width: 50px;
+            height: 80px;
+            background-color:red;
+            position: absolute;
+            border-radius: 50px 40px 0px 0px;
+            transform-origin: 0 100%;
+            transform: rotate(-45deg);
+            left: 50px;
+
+        }
+        .demo::before{
+            content:'';
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            background-color:red;
+            border-radius: 50px 40px 0px 0px;
+            transform-origin: 100% 100%;
+            transform: rotate(45deg);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+
+
+    </div>
+</body>
+</html>

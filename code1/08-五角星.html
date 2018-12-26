@@ -7,7 +7,36 @@
     <title>Document</title>
     <style>
         .demo{
-            
+            width: 0;
+            height: 0;
+            border-bottom: 70px solid red;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            margin:150px auto;
+            transform:rotate(35deg);
+        }
+
+        .demo::before{
+            content:'';
+            width: 0;
+            height: 0;
+            border-bottom: 80px solid red;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            transform: rotate(-35deg);
+            top: -45px;
+            left: -65px;
+        }
+        .demo::after{
+            content:'';
+            position: absolute;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            border-right: 100px solid  transparent;
+            transform: rotate(-70deg);
+            top:3px;
+            left: -105px;
         }
     </style>
 </head>
