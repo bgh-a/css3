@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+        
+        .demo{
+            margin:50px auto;
+            width: 260px;
+            height: 270px;
+            border:1px solid #ccc;
+            font-family: 'Microsoft YaHei';
+            cursor: pointer;
+        }
+
+        .m_title{
+            text-align: left;
+            font-size: 20px;
+            padding:20px 10px 10px 10px;
+        }
+        .m_content{
+            color:#11ccaa;
+            padding:0px 10px 10px 10px;
+        }
+        .m_img{
+            text-align: right;
+            position: relative;
+        }
+        .m_img img{
+            position: absolute;
+            top:0px;
+            right: 0px;
+            transition: right .3s;
+        }
+        .demo:hover img{
+           right: 15px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="demo">
+
+        <div class="m_title">坚果</div>
+        <div class="m_content">三只松鼠哦</div>
+        <div class="m_img"><img src="./mei.jpg" alt="坚果"></div>
+     
+    </div>
+</body>
+</html>

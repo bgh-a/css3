@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .box {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            cursor:pointer;
+        }
+
+        .box .bmbox{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            text-align: center;
+            display: none;
+            bottom: 0px;
+            left: 0px;
+        }
+        .bmbox p{
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            -o-text-overflow:ellipsis;
+            -webkit-text-overflow:ellipsis;
+            -moz-text-overflow:ellipsis;
+            white-space:nowrap;
+            text-align: center;
+            position: absolute;
+            top:35px;
+            left: 35px;
+        }
+        .bmbox::before{
+            content:"点击进入";
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top:100px;
+            left: 35px;
+            background-color: rgb(252, 47, 81);
+            border-radius:20px 20px 20px 20px;
+        }
+        .box:hover .bmbox{
+            width: 150px;
+            height: 150px;
+            background-color:rgba(41, 36, 33, .8);
+            display: block;
+            font:12px/30px "Microsoft YaHei"; color:white;
+            text-align:center;
+            line-height: 150px;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./mei.jpg" alt="女装">
+        <div class="bmbox">
+            <p>侯阿康啊哈哈,哦哈哈妮</p>
+        </div>
+    </div>
+</body>
+</html>

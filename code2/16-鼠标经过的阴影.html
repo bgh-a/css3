@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style type="text/css">
+    .box{ 
+        width:150px;
+        height:150px;
+        position:relative;
+        cursor:pointer;
+        }
+    .box .bmbox{ 
+        width:150px; 
+        height:150px; 
+        position:absolute; 
+        bottom:0px; 
+        left:0px; 
+        display:none;
+        font:12px/30px "Microsoft YaHei"; color:white;
+        text-align:center;
+        /* box-shadow:2px 2px 3px #ccc;
+        transition: all 2s; */
+        }
+    .box:hover .bmbox{
+        width:150px; 
+        height:150px; 
+        background-color:rgba(52, 52, 52, .5);
+        position:absolute; 
+        bottom:0px; 
+        left:0px; 
+        display:block;
+        font:12px/30px "Microsoft YaHei"; color:white;
+        text-align:center;
+        line-height: 146px;
+        }
+</style>
+</head>
+    
+<body>
+    <div class="box">
+        <img src="./mei.jpg" alt="">
+    <div class="bmbox">文字</div>
+    </div>
+</body>
+
+</body>
+</html>
