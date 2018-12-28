@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            /* infinite 无限的、无穷的 */
+            animation: tiao 5s infinite;
+        }
+        @keyframes mymove{
+            0%   {top:0px;}
+            25%  {top:200px;}
+            75%  {top:50px;}
+            100% {top:100px;}
+        }
+
+        @keyframes tiao{
+            0%   {top:0px;left:20px;background-color: red;}
+            25%  {top:0px;left: 200px;background-color: skyblue;}
+            50%  {top: 160px;left: 100px;background-color: #6A6;}
+            75%  {top: 160px;left: 30px;background-color: #00f;}
+            100% {top:0px;left:30px;background-color: orange;}
+        }
+    
+    </style>
+</head>
+<body>
+    <p><b>注释：</b>本例在Internet explorer 中无效</p>
+    <div></div>
+</body>
+</html>
