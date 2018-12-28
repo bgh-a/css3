@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #main {
+            width: 400px;
+            height: 150px;
+            border:1px solid #cc33cc;
+            margin:100px auto;
+            display: flex;
+        }
+        #main div{
+            width: 70px;
+            height: 70px;
+        }
+
+        #myRedDiv{order:2;}
+        #myBlueDiv{order:4;}
+        #myGreenDiv{order:3;}
+        #myPinkDiv{order:1;}
+
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="background-color: coral;" id="myRedDiv"></div>
+        <div style="background-color: lightblue;" id="myBlueDiv"></div>
+        <div style="background-color: lightgreen;" id="myGreenDiv"></div>
+        <div style="background-color: pink;" id="mypinkDiv"></div>
+    </div>
+</body>
+</html>
