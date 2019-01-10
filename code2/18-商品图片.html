@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .box{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            cursor:pointer;
+        }
+        .box .bmbox{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            text-align: center;
+            background-color: #6a6;
+            line-height: 150px;
+            box-shadow: 2px 2px 3px gold;
+            display: none;
+        }
+        .box:hover .bmbox{
+            
+            display: block;
+            background-color: rgba(52,52,52,.8);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./mei.jpg" alt="">
+        <div class="bmbox">文字</div>
+    </div>
+</body>
+</html>

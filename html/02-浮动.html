@@ -8,6 +8,7 @@
     <style>
         .wrapper{
             border:1px solid salmon;
+            /* overflow: hidden;   在这里加这个能清除浮动 */
         }
         .content{
             float: left;
@@ -16,12 +17,20 @@
             background-color: #6a6;
             color: #fff;
         }
-       .wrapper::after{
+       /* .wrapper::after{
            content:"";
            clear: both;
            display: block;
+       } 这个也能清除浮动 */
+       /* p{
+           clear: both;
+       }  在wrapper中加了一个p标签   这样也能清除浮动 */
+       .wrapper::after{
+           content:"";
+           display: block;
+           clear: both;
        }
-
+      
     </style>
 </head>
 <body>
